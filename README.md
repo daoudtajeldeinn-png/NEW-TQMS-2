@@ -1,20 +1,87 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# PharmaQMS Enterprise - React Application
 
-# Run and deploy your AI Studio app
+## نظام إدارة الجودة الشاملة للأدوية
 
-This contains everything you need to run your app locally.
+تطبيق React تفاعلي لنظام إدارة الجودة الشاملة للأدوية.
 
-View your app in AI Studio: https://ai.studio/apps/274e1f02-14fa-406b-be1f-c761e44597c4
+---
 
-## Run Locally
+## 🚀 التشغيل محلياً
 
-**Prerequisites:**  Node.js
+### المتطلبات
 
+- Node.js 18+ 
+- npm
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### التثبيت
+
+```
+bash
+# الانتقال إلى مجلد التطبيق
+cd app
+
+# تثبيت المتطلبات
+npm install
+
+# تشغيل خادم التطوير
+npm run dev
+```
+
+### البناء للإنتاج
+
+```
+bash
+npm run build
+```
+
+---
+
+## 🌐 النشر على GitHub Pages
+
+تم إعداد GitHub Actions للنشر التلقائي. عند رفع الكود على فرع `main`، سيتم:
+1. تثبيت المتطلبات
+2. بناء التطبيق
+3. نشره على GitHub Pages
+
+رابط التطبيق: https://daoudtajeldeinn-png.github.io/New-Pharmaqms/
+
+---
+
+## 📁 هيكل المجلدات
+
+```
+app/
+├── src/
+│   ├── components/     # مكونات React
+│   │   ├── ui/        # مكونات واجهة المستخدم
+│   │   ├── layout/    # مكونات التخطيط
+│   │   ├── dashboard/ # مكونات لوحة التحكم
+│   │   └── ...
+│   ├── pages/         # صفحات التطبيق
+│   ├── hooks/        # React hooks
+│   ├── locales/      # ملفات الترجمة
+│   ├── services/     # الخدمات
+│   ├── db/          # قاعدة البيانات
+│   └── types/       # أنواع TypeScript
+├── public/          # الملفات الثابتة
+├── package.json
+└── vite.config.ts
+```
+
+---
+
+## 🛠️ التقنيات
+
+- React 19.2.0
+- TypeScript 5.9.3
+- Vite 7.2.4
+- Tailwind CSS 3.4
+- shadcn/ui
+- i18next
+- Dexie (IndexedDB)
+
+---
+
+## 📞 الدعم
+
+**المطور:** Dr. Daoud Tajeldeinn Ahmed
