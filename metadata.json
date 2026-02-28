@@ -1,0 +1,7 @@
+{
+  "name": "PharmaQualify Pro10/2/2026",
+  "description": "A comprehensive Total Quality Management (TQM) platform for the pharmaceutical industry, featuring automated deviation tracking, AI-powered CAPA suggestions, risk assessment tools, and GMP compliance monitoring.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
